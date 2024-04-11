@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> stop clock</title>
+        <style>
+           *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+           }
+           body{
+            background-image:linear-gradient(pink,lavender);
+            background-repeat: no-repeat;
+            width:100vw;
+            height:100vh;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+           }
+           .time{
+            display: flex;
+            margin: 10px;
+           }
+           div{
+            margin: 6px;
+            font-size: 20px;
+            font-weight: bold;
+           }
+           button{
+            border:none;
+            outline:none;
+            width:70px;
+            height:30px;
+            border-radius: 5px;
+            margin: 10px;
+            font-size: 15px;
+            cursor: pointer;
+           }
+           .box{
+            width:500px;
+            height: 100px;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+           }
+           .start{
+            background-color: rgb(16, 157, 16);
+            color:white;
+           }
+           .stop{
+            background-color: rgb(227, 28, 61);
+            color:white;
+           }
+           .reset{
+            background-color: rgb(54, 28, 227);
+            color:white;
+           }
+           h1{
+            margin: 30px;
+           }
+           .button{
+            margin: 10px;
+           }
+
+        </style>
+    </head>
+    <body>
+        <h1> STOP WATCH</h1>
+      
+        <div class="box">
+            <div class="time">
+                <div class="hr">00</div>
+                <div class="colon">:</div>
+                <div class="min">00</div>
+                <div class="colon">:</div>
+                <div class="sec">00</div>
+                <div class="colon">:</div>
+                <div class="ms">00</div>
+
+            </div>
+            <div class="buttons">
+                <button class="start">start</button>
+                <button class="stop">stop</button>
+                <button class="reset">reset</button>
+            </div>
+        </div>
+        <script src="JS/jscript5.js"></script>
+    </body>
+</html>
